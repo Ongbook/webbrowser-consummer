@@ -1,0 +1,64 @@
+<!-- Modal -->
+<div class="modal fade" id="mdFomente" tabindex="-1" role="dialog"
+aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">
+				<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+			</button>
+			<h3 class="modal-title" id="myModalLabel">Fomente</h3>
+		</div>
+		<div class="modal-body">
+			<form class="form-horizontal" action="http://ongbook.org/cgi-sys/FormMail.cgi" method="post" name="form">
+				<fieldset>
+					<legend>Como gostaria de contribuir?</legend>
+					<p>Independente de quem seja e da área que atue, sua participação é fundamental ☺</p><br>
+					<div class="form-group">
+						<label for="nomeParceiro" class="col-lg-2 control-label">Nome</label>
+						<div class="col-lg-10">
+							<input type="text" class="form-control" id="nomeParceiro">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="emailParceiro" class="col-lg-2 control-label">Email</label>
+						<div class="col-lg-10">
+							<input type="email" class="form-control" id="emailParceiro">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="assuntoParceiro" class="col-lg-2 control-label">Assunto</label>
+						<div class="col-lg-10">
+							<input type="text" class="form-control" id="assuntoParceiro">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="mensagemParceiro" class="col-lg-2 control-label">Mensagem</label>
+						<div class="col-lg-10">
+							<textarea class="form-control" rows="3" id="mensagemParceiro"></textarea>
+							<!-- <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Receber cópia da mensagem.
+								</label>
+							</div> -->
+						</div>
+					</div>
+					<input type="hidden" name="recipient" value="contato@ongbook.org">
+					<input type="hidden" name="subject" value="Mensagem de Parceiros - Ongbook">
+					<input type="hidden" name="redirect" value="http://www.ongbook.org">
+
+					<!--<div class="form-group">
+						<div class="col-lg-10 col-lg-offset-2">
+							<button class="btn btn-default">Cancel</button>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</div>
+					</div> -->
+					<p style="text-align:right;"><button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Agora não</button>
+					<button type="submit" class="btn btn-primary btn-sm">Enviar</button></p>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+</div>

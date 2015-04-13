@@ -1,0 +1,79 @@
+{include file="view/headerApp.html"}
+
+<h1><small><a href="entidades.php"><span class="glyphicon glyphicon-chevron-left"></span></a></small> Perfil da {$nomeFantasia}.</h1><br>
+
+<div class="col-md-8 col-offset-2-md centered">
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<div class="col-lg-4">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<br><img class="centro" src="../clienteRest/view/img/financie.png" alt=""/><br>
+					</div>
+					<div class="panel-footer"><h5 class="text-info" style="text-align:center;"><a title="Ir para o site da {$nomeFantasia}" href="http://{$site}" target="_blank">{$site}</a></h5></div>
+				</div>
+				<h5><strong>Bairro:</strong> {$bairro}.</h5>
+				<h5><strong>Cidade:</strong> {$cidade} - {$uf}.</h5>
+				<h5><strong>Tel:</strong> {$tel}</h5>
+				<h5><strong>E-mail:</strong> {$email}</h5>
+				<h5><strong>Público alvo:</strong> {$publicoAlvo}</h5>
+				<div class="well well-sm">
+					<h5><strong>Área de atuação:</strong></h5>
+					<h5>{$publicoAlvo}</h5>
+				</div>
+
+			</div>
+			<div class="col-lg-8">
+				<div>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#proposta" data-toggle="tab">Proposta</a></li>
+						<li><a href="#objetivo" data-toggle="tab">Objetivo</a></li>
+						<li><a href="#atividades" data-toggle="tab">Atividades</a></li>
+						<li><a href="#necessidades" data-toggle="tab">Necessidades</a></li>
+						<li><a href="#dados" data-toggle="tab">Dados</a></li>
+					</ul>
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane fade active in" id="proposta">
+							<div style="margin-top:10px;">
+								<p>Teste do bom 1 - Proposta</p>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="objetivo">
+							<div style="margin-top:10px;">
+								<p>Teste do bom 2 - Objetivo</p>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="atividades">
+							<div class="well well-sm" style="margin-top:10px;">
+								<p><strong>Público Alvo:</strong> {$publicoAlvo}</p>
+							</div>
+							<div class="well well-sm">
+								<p><strong>Área de atuação:</strong> {$publicoAlvo}</p>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="necessidades">
+							<div style="margin-top:10px;">
+								<p>Teste do bom 2 - Necessidades</p>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="dados">
+							<div style="margin-top:10px;">
+								<p><strong>CNPJ:</strong> {$cnpj}</p>
+								<p><strong>Razão Social:</strong> {$razaoSocial}</p>
+								<p><strong>Endereço:</strong> {$endereco}, nº {$numero}, {$bairro} - {$cidade}/{$uf}.</p>
+								<p><strong>Responsável:</strong> {$nomeResponsavel}</p>
+								<p><strong>Cel:</strong> {$cel}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default" style="margin-top:50px;">
+					<div class="panel-body">
+						<h5 style="text-align:center;">Timeline de Necessidades</h5><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{include file="view/footer.html"}

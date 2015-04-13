@@ -1,0 +1,5 @@
+# ignorar todos deste diretório #
+*
+
+# exceto o .gitignore #
+!.gitignore

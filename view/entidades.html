@@ -1,0 +1,21 @@
+{include file="view/headerApp.html"}
+
+<h1>{$title}</h1><br>
+
+<div class="container-fluid">
+	{foreach from=$lista item=row}
+	<div class="col-lg-4">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<a href="entidade.php?cnpj={$row.cnpj}"><h1 style="text-align:center;">{$row.nomeFantasia}</h1></a>
+				<h2 style="text-align:center;">{$row.cidade} - {$row.uf}</h2>
+				<h4 style="text-align:center;">{$row.bairro}</h4>
+				<h5 style="text-align:center;">{$row.site}</h5><br>
+			</div>
+		</div>
+	</div>
+	{/foreach}
+</div>
+</div>
+
+{include file="view/footer.html"}
