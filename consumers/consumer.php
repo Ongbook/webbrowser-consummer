@@ -3,19 +3,19 @@
 class Consumer
 {
 	public $cnpj;
-    public $razaoSocial;
-    public $nomeFantasia;
-    public $endereco;
-    public $numero;
+	public $razaoSocial;
+	public $nomeFantasia;
+	public $endereco;
+	public $numero;
 	public $bairro;
-    public $cidade;
-    public $uf;
-    public $publicoAlvo;
-    public $site;
-    public $email;
-    public $tel;
-    public $nomeResponsavel;
-    public $cel;
+	public $cidade;
+	public $uf;
+	public $publicoAlvo;
+	public $site;
+	public $email;
+	public $tel;
+	public $nomeResponsavel;
+	public $cel;
 
 	public function sendPost($data)
 	{
@@ -41,9 +41,9 @@ class Consumer
 		}
 
 		$dataEnvio = array("cnpj" => $this->cnpj, "razaoSocial" => $this->razaoSocial, "nomeFantasia" => $this->nomeFantasia,
-			"endereco" => $this->endereco, "numero" => $this->numero, "bairro" => $this->bairro, "cidade" => $this->cidade,
-			"uf" => $this->uf, "publicoAlvo" => $this->publicoAlvo, "site" => $this->site, "email" => $this->email,
-			"tel" => $this->tel, "nomeResponsavel" => $this->nomeResponsavel, "cel" => $this->cel);
+		"endereco" => $this->endereco, "numero" => $this->numero, "bairro" => $this->bairro, "cidade" => $this->cidade,
+		"uf" => $this->uf, "publicoAlvo" => $this->publicoAlvo, "site" => $this->site, "email" => $this->email,
+		"tel" => $this->tel, "nomeResponsavel" => $this->nomeResponsavel, "cel" => $this->cel);
 
 		$ch = curl_init("http://104.131.182.82/api/entidades");
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -59,34 +59,34 @@ class Consumer
 		}
 	}
 
-	public function sendGetAll()
-	{
-		$ch = curl_init("http://104.131.182.82/api/entidades");
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
-		$response = curl_exec($ch);
-		curl_close($ch);
-		if(!$response){
-			return false;
-		}
-		else{
-			return $response;
-		}
+public function sendGetAll()
+{
+	$ch = curl_init("http://104.131.182.82/api/entidades");
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
+	$response = curl_exec($ch);
+	curl_close($ch);
+	if(!$response){
+		return false;
 	}
+	else{
+		return $response;
+	}
+}
 
-	public function sendGetById($cnpj)
-	{
-		$ch = curl_init("http://104.131.182.82/api/entidades/$cnpj");
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
-		$response = curl_exec($ch);
-		curl_close($ch);
-		if(!$response){
-			return false;
-		}
-		else{
-			return $response;
-		}
+public function sendGetById($cnpj)
+{
+	$ch = curl_init("http://104.131.182.82/api/entidades/$cnpj");
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
+	$response = curl_exec($ch);
+	curl_close($ch);
+	if(!$response){
+		return false;
 	}
+	else{
+		return $response;
+	}
+}
 
 }
