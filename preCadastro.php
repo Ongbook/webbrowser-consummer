@@ -3,9 +3,11 @@ require_once 'sm.php';
 require_once 'consumers/preCadastro.php';
 
 
+
 if(isset($_POST['nome']) and isset($_POST['email'])){
-	cad = new PreCadastro();
-	cad->sendPost($_POST);
+	$cad = new PreCadastro();
+	$cad->sendPost($_POST);
+var_dump($_POST);
 }
 
 $sm->assign("titulo","Primeira etapa");

@@ -10,12 +10,12 @@ class PreCadastro
 		if(isset($data["nome"]) and isset($data["email"])){
 
 			$this->nome = $data["nome"];
-			$this->razaoSocial = $data["email"];
+			$this->email = $data["email"];
 		}
 
 		$dataEnvio = array("nome" => $this->nome, "email" => $this->email);
 
-		$ch = curl_init("http://104.131.182.82/api/entidades");
+		$ch = curl_init("http://localhost/apiSoulsolidario/usuarios");
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 		curl_setopt($ch, CURLOPT_POSTFIELDS,http_build_query($dataEnvio));
