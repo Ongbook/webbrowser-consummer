@@ -86,7 +86,7 @@
 
 /* Links ancoras institucionais ****************************************/
 .institucionais-ancora {
-    margin-top: 50px;
+    margin-top: 55px;
 }
 
 /* Video responsivo **************************************************/
@@ -111,11 +111,11 @@ iframe{
 }
 /***********************************************************************/
 
-/* Imagens e elementos do btn Divulgue *********************************/
+/* Imagens e elementos do btn Divulgue, Fomente e Desenvola ************/
 .centro{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 60%;
 }
 /***********************************************************************/

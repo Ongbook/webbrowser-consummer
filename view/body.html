@@ -1,128 +1,193 @@
+
 {include file="view/header.html"}
-<div class="apresentacaoMapa">
-	<div class="apresenta">
-		<h1>Entidades Sociais a sua volta, você conhece?</h1>
-		<br>
-		<h4><strong>Um local para Solidários conhecerem as necessidades de<br>
-			Entidades que trabalham para suprir problemas sociais.</strong></h4>
-			<br><br>
-			<p style="text-align:center;"><a id="conhecaAgora" class="btn btn-primary btn-lg">Conheça agora</a></p>
-		</div>
 
-		<div id="mapa"></div>
-	</div>
+<div class="container-fluid" style="margin-top:60px; width:100%;">
 
-	{include file="view/filtrosMapa.html"}
+	<div class="apresentacaoMapa">
+		<div class="apresenta">
 
-	<a name="queremos"></a><p style="text-align:center;">❣ ☮ ❥</p>
-	<div class="institucionais-ancora">
-		<h1>Queremos e fazemos</h1><br>
-		<div class="container" style="margin-bottom:60px;">
-			<div class="col-lg-6">
-				<h3>Metas</h3><br>
-				<ul><strong>Para as Entidades Sociais:</strong>
-					<li>Dar visibilidade aos seus projetos sociais;</li>
-					<li>Manter a população informada de suas atividades;</li>
-					<li>Gerir suas necessidades (postar, manter e dar feedback):</li>
-					<ul>
-						<li style="font-size:12px; margin-left:40px; margin-top:5px">Necessidade de um determinado material;</li>
-						<li style="font-size:12px; margin-left:40px">Necessidade de dinheiro, para comprar o material;</li>
-						<li style="font-size:12px; margin-left:40px">Necessidade de trabalho voluntário.</li>
-					</ul>
-				</ul>
-				<br>
-				<ul><strong>Para os Solidários:</strong>
-					<li>Informações categorizadas de atividades sociais;</li>
-					<li>Oportunidade de exercer atividades filantrópicas;</li>
-					<li>Contribuir para melhoria da aplicação.</li>
-				</ul>
-			</div><br>
-			<div class="col-lg-6">
-				<div class="delimitador">
-					<div class="contenedor">
-						<iframe class="iframe" src="//www.youtube.com/embed/oAPdNKTrBYA" allowfullscreen></iframe>
-					</div>
-				</div>
+			<h1>Entidades Sociais a sua volta, você conhece?</h1><br>
+
+			<h4><strong>Um local para Solidários conhecerem as necessidades de<br>
+				Entidades que trabalham para suprir problemas sociais.</strong></h4>
+				<br><br>
+				<p style="text-align:center;"><a id="conhecaAgora" class="btn btn-primary btn-lg">Conheça agora</a></p>
 			</div>
+
+			<div id="mapa"></div> <!-- Chama o arquivo filtrosMapa.html ao clicar em Conheça agora -->
+
 		</div>
-		<div style="margin-bottom:60px;">
+
+		{include file="view/filtrosMapa.html"}
+
+		<div id="queremos"><p style="text-align:center;">❣ ☮ ❥</p></div>
+
+		<div class="institucionais-ancora">
+
+			<h1>Queremos e fazemos</h1>
+
 			<div class="container">
-				<blockquote class="pull-right">
-					<p>O que conta não é o quanto você tem, e sim, o quanto você contribui.</p>
-					<small>Peter Drucker em <cite title="Drucker Institute"><a href="http://www.druckerinstitute.com/drucker-nonprofit-innovation-award/" target="_blank">NONPROFIT</a></cite>. <a href="http://migre.me/mRmc2" target="_blank">Slide</a></small>
-				</blockquote></div>
-			</div>
-		</div>
-		<a name="apoie"></a><p style="text-align:center;">❣ ☮ ❥</p>
+
+				<h3 class="text-info" style="text-align:center; line-height: 1.5em;">Conceber para o mundo, o Catálogo de Entidades Sociais e suas Necessidades,<br>daquelas com as causas mais nobres do Planeta.</h3>
+
+				<div class="col-lg-6">
+
+					<h2>Metas</h2>
+					<ul><strong>Para as Entidades Sociais:</strong>
+						<li>Dar visibilidade aos seus projetos sociais;</li>
+						<li>Manter a população informada de suas atividades diárias;</li>
+						<li>Gerir suas necessidades (postar, manter e dar feedback - dos resultados):</li>
+						<ul>
+							<li style="font-size:12px; margin-left:40px; margin-top:5px">Necessidade de um determinado material;</li>
+							<li style="font-size:12px; margin-left:40px">Necessidade de dinheiro, para comprar o material;</li>
+							<li style="font-size:12px; margin-left:40px">Necessidade de trabalho voluntário.</li>
+						</ul>
+					</ul>
+					<br>
+					<ul><strong>Para os usuários com perfil Solidário:</strong>
+						<li>Informações categorizadas de atividades sociais;</li>
+						<li>Oportunidade de exercer atividades filantrópicas, exercer a cidadania;</li>
+						<li>Receber notificações nas redes sociais de atividades sociais com o seu perfil;</li>
+						<li>Contribuir para melhoria da aplicação, caso seja desenvolvedor.</li>
+					</ul>
+				</div><br>
+
+				<div class="col-lg-6">
+					<div class="delimitador">
+						<div class="contenedor">
+							<iframe class="iframe" src="//www.youtube.com/embed/doHnLiAzQ5M" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6" style="margin-top:15px;">
+					<blockquote class="pull-right">
+						<h5>"O que conta não é o quanto você tem, e sim, o quanto você contribui".</h5>
+						<small>Peter Drucker em <cite title="Drucker Institute"><a href="http://www.druckerinstitute.com/drucker-nonprofit-innovation-award/" target="_blank">NONPROFIT</a></cite>. <a href="http://migre.me/mRmc2" target="_blank">Slide</a></small>
+					</blockquote>
+				</div>
+
+			</div> <!-- Finaliza o class="container" -->
+
+		</div> <!-- Finaliza o class="institucionais-ancora" - Queremos e Fazemos -->
+
+		<div id="apoie"><p style="text-align:center;">❣ ☮ ❥</p></div>
+
 		<div class="institucionais-ancora">
+
 			<h1>Apoie esta iniciativa</h1><br>
-			<h3 style="text-align:center;">Ajude-nos a ajudar.</h3><br><br><br>
-			<div class="col-lg-4">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<p style="text-align:center;">Participe da evolução desta ferramenta.</p><br>
-						<img class="centro" src="view/img/desenvolva.png" alt=""/><br>
+
+			<div class="container">
+
+				<h3 style="text-align:center;">Ajude-nos a ajudar.</h3><br><br><br>
+
+				<div class="col-lg-4">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<p style="text-align:center;">Curta, compartilhe! Avise seus amigos.</p><br>
+							<img class="centro" src="view/img/viral.png" alt=""/><br>
+						</div>
+						<div class="panel-footer"><a class="btn btn-warning btn-lg btn-block" role="menuitem" tabindex="-1" data-toggle="modal" data-target="#mdDivulgue" href="">Divulgue</a></div>
+						{include file="view/divulgue.html"}
 					</div>
-					<div class="panel-footer"><a class="btn btn-warning btn-lg btn-block" role="menuitem" tabindex="-1" data-toggle="modal" data-target="#mdDesenvolva" href="">Desenvolva conosco</a></div>
-					{include file="view/desenvolva.html"}
 				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<p style="text-align:center;">Curta, compartilhe! Avise seus amigos.</p><br>
-						<img class="centro" src="view/img/viral.png" alt=""/><br>
+				<div class="col-lg-4">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<p style="text-align:center;">Seja nosso Parceiro!</p><br>
+							<img class="centro" src="view/img/financie.png" alt=""/><br>
+						</div>
+						<div class="panel-footer"><a class="btn btn-warning btn-lg btn-block" role="menuitem" tabindex="-1" data-toggle="modal" data-target="#mdFomente" href="">Fomente</a></div>
+						{include file="view/fomente.html"}
 					</div>
-					<div class="panel-footer"><a class="btn btn-warning btn-lg btn-block" role="menuitem" tabindex="-1" data-toggle="modal" data-target="#mdDivulgue" href="">Divulgue</a></div>
-					{include file="view/divulgue.html"}
 				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<p style="text-align:center;">Seja nosso Parceiro!</p><br>
-						<img class="centro" src="view/img/financie.png" alt=""/><br>
+				<div class="col-lg-4">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<p style="text-align:center;">Participe da evolução desta ferramenta.</p><br>
+							<img class="centro" src="view/img/desenvolva.png" alt=""/><br>
+						</div>
+						<div class="panel-footer"><a class="btn btn-warning btn-lg btn-block" role="menuitem" tabindex="-1" data-toggle="modal" data-target="#mdDesenvolva" href="">Desenvolva conosco</a></div>
+						{include file="view/desenvolva.html"}
 					</div>
-					<div class="panel-footer"><a class="btn btn-warning btn-lg btn-block" role="menuitem" tabindex="-1" data-toggle="modal" data-target="#mdFomente" href="">Fomente</a></div>
-					{include file="view/fomente.html"}
 				</div>
-			</div>
-		</div><br>
-		<a name="parceiros"></a><p style="text-align:center;">❣ ☮ ❥</p>
+
+			</div> <!-- Finaliza o class="container" -->
+
+		</div> <!-- Finaliza o class="institucionais-ancora" - Apoie esta iniciativa -->
+
+		<div id="parceiros"><p style="text-align:center;">❣ ☮ ❥</p></div>
+
 		<div class="institucionais-ancora">
+
 			<h1>Parceiros</h1><br>
 			<div class="container">
-				<div class="col-lg-3">
+				<div class="col-lg-6">
 					<div class="panel panel-default">
 						<div class="panel-body"><br>
 							<img class="centro" src="view/img/parceiros/1.png" alt=""/><br>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3">
-					<div class="panel panel-default">
-						<div class="panel-body"><br>
-							<img class="centro" src="view/img/parceiros/2.png" alt=""/><br>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="panel panel-default">
-						<div class="panel-body"><br>
-							<img class="centro" src="view/img/parceiros/3.png" alt=""/><br>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-6">
 					<div class="panel panel-default">
 						<div class="panel-body"><br>
 							<img class="centro" src="view/img/financie.png" alt=""/><br>
 						</div>
 					</div>
 				</div>
-			</div>
-			<br><br>
+			</div><br>
+
 			<h4 class="text-info" style="text-align:center; line-height: 1.7em;">Agradecemos o apoio de todos que acreditam nessa iniciativa
-				e, de alguma forma mentalizam<br>o caminho próspero que devemos seguir para servir à sociedade com esta aplicação.</h4>
+				e, de alguma forma mentalizam<br>o caminho próspero que devemos seguir para servir à humanidade com esta aplicação.</h4><br>
+
 			</div>
-			{include file="view/footer.html"}
+
+			<div id="responsavel"><p style="text-align:center;">❣ ☮ ❥</p></div>
+
+			<div class="institucionais-ancora">
+				<h1>Responsável por uma Entidade Social</h1><br>
+				<div class="container" style="margin-bottom:60px;">
+					<div class="col-lg-6">
+						<h3>Metas</h3><br>
+						<ul><strong>Para as Entidades Sociais:</strong>
+							<li>Dar visibilidade aos seus projetos sociais;</li>
+							<li>Manter a população informada de suas atividades;</li>
+							<li>Gerir suas necessidades (postar, manter e dar feedback):</li>
+							<ul>
+								<li style="font-size:12px; margin-left:40px; margin-top:5px">Necessidade de um determinado material;</li>
+								<li style="font-size:12px; margin-left:40px">Necessidade de dinheiro, para comprar o material;</li>
+								<li style="font-size:12px; margin-left:40px">Necessidade de trabalho voluntário.</li>
+							</ul>
+						</ul>
+						<br>
+						<ul><strong>Para os Solidários:</strong>
+							<li>Informações categorizadas de atividades sociais;</li>
+							<li>Oportunidade de exercer atividades filantrópicas;</li>
+							<li>Contribuir para melhoria da aplicação.</li>
+						</ul>
+					</div><br>
+					<div class="col-lg-6">
+						<div class="delimitador">
+							<div class="contenedor">
+								<iframe class="iframe" src="//www.youtube.com/embed/oAPdNKTrBYA" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="margin-bottom:60px;">
+					<div class="container">
+						<blockquote class="pull-right">
+							<p>O que conta não é o quanto você tem, e sim, o quanto você contribui.</p>
+							<small>Peter Drucker em <cite title="Drucker Institute"><a href="http://www.druckerinstitute.com/drucker-nonprofit-innovation-award/" target="_blank">NONPROFIT</a></cite>. <a href="http://migre.me/mRmc2" target="_blank">Slide</a></small>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+			<h1 style="font-color:white;">HEHEHE</h1><br>
+			<h1 style="font-color:white;">HEHEHE</h1><br>
+			<h1 style="font-color:white;">HEHEHE</h1><br>
+			<h1 style="font-color:white;">HEHEHE</h1><br>
+			<h1 style="font-color:white;">HEHEHE</h1><br>
+		</div>
+		{include file="view/footer.html"}
