@@ -119,3 +119,10 @@ iframe{
     width: 60%;
 }
 /***********************************************************************/
+
+/* Elemento RECAPTCHA do Google - Form pre-cadastro no body.html *******/
+
+#recaptcha {
+    position: relative !important;
+}
+/***********************************************************************/
