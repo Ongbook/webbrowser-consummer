@@ -1,5 +1,5 @@
 
-{include file="view/header.html"}
+{include file="view/header.html"} <!-- Implementa o header - Funcionalidade do Smarty -->
 
 <div class="container-fluid" style="margin-top:60px; width:100%;">
 
@@ -28,7 +28,7 @@
 
 			<div class="container">
 
-				<h3 class="text-info" style="text-align:center; line-height: 1.5em;">Conceber para o mundo, o Catálogo de Entidades Sociais e suas Necessidades,<br>daquelas com as causas mais nobres do Planeta.</h3>
+				<h3 class="text-info" style="text-align:center; line-height: 1.5em;">Catálogo de Entidades Sociais e suas Necessidades, daquelas com as causas mais nobres do Planeta.<br>Todas engajadas em prol dos <a href="http://www.objetivosdomilenio.org.br/" target="_blank">Objetivos de Desenvolvimento do Milênio</a>.</h3>
 
 				<div class="col-lg-6">
 
@@ -112,78 +112,108 @@
 					</div>
 				</div>
 
-			</div> <!-- Finaliza o class="container" -->
+			</div> <!-- Finaliza a div com a class="container" -->
 
-		</div> <!-- Finaliza o class="institucionais-ancora" - Apoie esta iniciativa -->
+		</div> <!-- Finaliza a div com a class="institucionais-ancora" - Apoie esta iniciativa -->
 
-		<div id="parceiros"><p style="text-align:center;">❣ ☮ ❥</p></div>
+		<div id="responsavel"><p style="text-align:center;">❣ ☮ ❥</p></div>
 
 		<div class="institucionais-ancora">
 
-			<h1>Parceiros</h1><br>
-			<div class="container">
+			<h1>Responsável por uma Entidade Social</h1><br>
+
+			<div class="container" style="margin-bottom:60px;">
+
 				<div class="col-lg-6">
-					<div class="panel panel-default">
-						<div class="panel-body"><br>
-							<img class="centro" src="view/img/parceiros/1.png" alt=""/><br>
-						</div>
-					</div>
-				</div>
+					<h3>Metas</h3><br>
+					<ul><strong>Para as Entidades Sociais:</strong>
+						<li>Dar visibilidade aos seus projetos sociais;</li>
+						<li>Manter a população informada de suas atividades;</li>
+						<li>Gerir suas necessidades (postar, manter e dar feedback):</li>
+						<ul>
+							<li style="font-size:12px; margin-left:40px; margin-top:5px">Necessidade de um determinado material;</li>
+							<li style="font-size:12px; margin-left:40px">Necessidade de dinheiro, para comprar o material;</li>
+							<li style="font-size:12px; margin-left:40px">Necessidade de trabalho voluntário.</li>
+						</ul>
+					</ul>
+					<br>
+					<ul><strong>Para os Solidários:</strong>
+						<li>Informações categorizadas de atividades sociais;</li>
+						<li>Oportunidade de exercer atividades filantrópicas;</li>
+						<li>Contribuir para melhoria da aplicação.</li>
+					</ul>
+				</div><br>
+
 				<div class="col-lg-6">
-					<div class="panel panel-default">
-						<div class="panel-body"><br>
-							<img class="centro" src="view/img/financie.png" alt=""/><br>
+
+					<!-- comeca o formulario -->
+					<div class="jumbotron">
+
+						<form method="post" class="form-horizontal">
+							<fieldset>
+
+								<legend>{$legend}</legend>
+								<div class="form-group">
+									<div class="col-lg-12">
+										<input type="text" class="form-control input-lg" name="nome" placeholder="Nome" required>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-lg-12">
+										<input type="email" class="form-control input-lg" name="email" placeholder="E-mail" required>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-lg-12">
+										<!-- Recaptcha do Google -->
+										<div class="g-recaptcha" data-sitekey="6LfKQhATAAAAALHbhBDzpoIJVUC9F3n3QgltQvB8"></div>
+									</div>
+								</div>
+								<p style="text-align:right;">
+									<button type="submit" class="btn btn-primary">Cadastrar</button></p>
+
+								</fieldset>
+							</form>
+
 						</div>
+
 					</div>
-				</div>
-			</div><br>
 
-			<h4 class="text-info" style="text-align:center; line-height: 1.7em;">Agradecemos o apoio de todos que acreditam nessa iniciativa
-				e, de alguma forma mentalizam<br>o caminho próspero que devemos seguir para servir à humanidade com esta aplicação.</h4><br>
+				</div> <!-- Finaliza a div com a class="container" -->
 
-			</div>
+			</div> <!-- Finaliza a div com a class="institucionais-ancora" - Responsavel Entidade Social -->
 
-			<div id="responsavel"><p style="text-align:center;">❣ ☮ ❥</p></div>
+
+			<div id="parceiros"><p style="text-align:center;">❣ ☮ ❥</p></div>
 
 			<div class="institucionais-ancora">
-				<h1>Responsável por uma Entidade Social</h1><br>
-				<div class="container" style="margin-bottom:60px;">
+
+				<h1>Parceiros</h1><br>
+
+				<div class="container">
 					<div class="col-lg-6">
-						<h3>Metas</h3><br>
-						<ul><strong>Para as Entidades Sociais:</strong>
-							<li>Dar visibilidade aos seus projetos sociais;</li>
-							<li>Manter a população informada de suas atividades;</li>
-							<li>Gerir suas necessidades (postar, manter e dar feedback):</li>
-							<ul>
-								<li style="font-size:12px; margin-left:40px; margin-top:5px">Necessidade de um determinado material;</li>
-								<li style="font-size:12px; margin-left:40px">Necessidade de dinheiro, para comprar o material;</li>
-								<li style="font-size:12px; margin-left:40px">Necessidade de trabalho voluntário.</li>
-							</ul>
-						</ul>
-						<br>
-						<ul><strong>Para os Solidários:</strong>
-							<li>Informações categorizadas de atividades sociais;</li>
-							<li>Oportunidade de exercer atividades filantrópicas;</li>
-							<li>Contribuir para melhoria da aplicação.</li>
-						</ul>
-					</div><br>
-					<div class="col-lg-6">
-						<div class="delimitador">
-							<div class="contenedor">
-								<iframe class="iframe" src="//www.youtube.com/embed/oAPdNKTrBYA" allowfullscreen></iframe>
+						<div class="panel panel-default">
+							<div class="panel-body"><br>
+								<img class="centro" src="view/img/parceiros/1.png" alt=""/><br>
 							</div>
 						</div>
 					</div>
-
-					<div>
-						<p style="text-align:center; margin-top:60px;"><a id="conhecaAgora" class="btn btn-primary btn-lg" href="preCadastro.php">Cadastre-se</a></p>
+					<div class="col-lg-6">
+						<div class="panel panel-default">
+							<div class="panel-body"><br>
+								<img class="centro" src="view/img/financie.png" alt=""/><br>
+							</div>
+						</div>
 					</div>
+				</div>  <!-- Finaliza a div com a class="container" -->
 
-				</div>
-				<h1 style="font-color:white;">HEHEHE</h1><br>
-				<h1 style="font-color:white;">HEHEHE</h1><br>
-				<h1 style="font-color:white;">HEHEHE</h1><br>
-				<h1 style="font-color:white;">HEHEHE</h1><br>
-				<h1 style="font-color:white;">HEHEHE</h1><br>
-			</div>
-			{include file="view/footer.html"}
+				<br>
+
+				<h4 class="text-info" style="text-align:center; line-height: 1.7em;">Agradecemos o apoio de todos que acreditam nessa iniciativa
+					e, de alguma forma mentalizam<br>o caminho próspero que devemos seguir para servir à humanidade com esta aplicação.</h4><br>
+
+				</div> <!-- Finaliza a div com a class="institucionais-ancora" - Parceiros -->
+
+			</div> <!-- Finaliza a div com a class="container-fluid" - Começo do arquivo -->
+
+			{include file="view/footer.html"} <!-- Implementa o footer - Funcionalidade do Smarty -->

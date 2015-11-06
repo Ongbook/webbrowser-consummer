@@ -21,6 +21,7 @@ class PreCadastro
 		curl_setopt($ch, CURLOPT_POSTFIELDS,http_build_query($dataEnvio));
 		$response = curl_exec($ch);
 		curl_close($ch);
+
 		if(!$response){
 			return false;
 		}
