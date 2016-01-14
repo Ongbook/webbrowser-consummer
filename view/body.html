@@ -18,7 +18,7 @@
 
 		</div>
 
-		{include file="view/filtrosMapa.html"}
+		{include file="view/filtrosMapa.html"} <!-- Implementa os filtros - Funcionalidade do Smarty -->
 
 		<div id="queremos"><p style="text-align:center;">❣ ☮ ❥</p></div>
 
@@ -149,7 +149,7 @@
 					<!-- comeca o formulario -->
 					<div class="jumbotron">
 
-						<form method="post" class="form-horizontal">
+						<form method="post" class="form-horizontal" >
 							<fieldset>
 
 								<legend>{$legend}</legend>
@@ -166,11 +166,11 @@
 								<div class="form-group">
 									<div class="col-lg-9">
 										<!-- Recaptcha do Google -->
-										<div id="recaptcha" class="g-recaptcha" data-sitekey="6LfKQhATAAAAALHbhBDzpoIJVUC9F3n3QgltQvB8" required></div>
+										<div id="recaptcha" class="g-recaptcha" data-sitekey="6LfKQhATAAAAALHbhBDzpoIJVUC9F3n3QgltQvB8"></div>
 									</div>
 									<div class="col-lg-3">
 										<p style="text-align:right;">
-											<button type="submit" class="btn btn-primary btn-lg">Ok</button>
+											<button id="btn-ir" type="submit" class="btn btn-primary btn-lg">Ir</button>
 										</p>
 									</div>
 								</div>
@@ -219,4 +219,5 @@
 
 		</div> <!-- Finaliza a div com a class="container-fluid" - Começo do arquivo -->
 
-			{include file="view/footer.html"} <!-- Implementa o footer - Funcionalidade do Smarty -->
+		{include file="view/footer.html"} <!-- Implementa o footer - Funcionalidade do Smarty -->
+		{include file="view/erros.html"}

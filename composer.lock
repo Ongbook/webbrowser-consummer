@@ -1,23 +1,24 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d20f08bb4ab3d4dda0c893bfb612f5bf",
+    "hash": "d82f37c6881efdb5e0c7ddf40f3e37b2",
+    "content-hash": "f0119ce3d231193fcf9c9d86693b5db3",
     "packages": [
         {
             "name": "smarty/smarty",
-            "version": "v3.1.21",
+            "version": "v3.1.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/smarty-php/smarty.git",
-                "reference": "1f878e6d746ecc8ec8d00d9c75044cf7d23ad94a"
+                "reference": "4537d8aae6c4a26f5439bc3a05d3437d25c2c4d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/1f878e6d746ecc8ec8d00d9c75044cf7d23ad94a",
-                "reference": "1f878e6d746ecc8ec8d00d9c75044cf7d23ad94a",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/4537d8aae6c4a26f5439bc3a05d3437d25c2c4d2",
+                "reference": "4537d8aae6c4a26f5439bc3a05d3437d25c2c4d2",
                 "shasum": ""
             },
             "require": {
@@ -33,7 +34,7 @@
                 "classmap": [
                     "libs/Smarty.class.php",
                     "libs/SmartyBC.class.php",
-                    "libs/sysplugins/smarty_security.php"
+                    "libs/sysplugins/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -59,7 +60,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2014-10-31 04:22:20"
+            "time": "2015-06-18 00:55:59"
         }
     ],
     "packages-dev": [],
@@ -67,6 +68,7 @@
     "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
 }

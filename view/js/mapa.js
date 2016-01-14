@@ -3,35 +3,8 @@ var idInfoBoxAberto;
 var infoBox = [];
 var markers = [];
 
-function initialize() {
-	var latlng = new google.maps.LatLng(-18.8800397, -47.05878999999999);
-
-	var options = {
-		zoom: 3,
-		center: latlng,
-		mapTypeId: google.maps.MapTypeId.ROADMAP
-	};
-
-	map = new google.maps.Map(document.getElementById("mapa"), options);
-}
-
-$('.btn-filtros').click(function(event){
-	if(navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position){ // callback de sucesso
-        // ajusta a posição do marker para a localização do usuário
-        marker.setPosition(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
-    },
-    function(error){ // callback de erro
-    	alert('Erro ao obter localização!');
-    	console.log('Erro ao obter localização.', error);
-    });
-} else {
-	alert('Navegador não suporta Geolocalização!');
-}
-});
-
-
 $(document).ready(function(){
+
 	initialize();
 
 	/*
@@ -46,6 +19,38 @@ $(document).ready(function(){
 	});
 });
 
+$('.btn-filtros').click(function(event){
+	if(navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position){ // callback de sucesso
+
+        // ajusta a posição do marker para a localização do usuário
+        marker.setPosition(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
+    },
+
+    function(error){ // callback de erro
+    	alert('Erro ao obter localização!');
+    	console.log('Erro ao obter localização.', error);
+    });
+
+} else {
+	alert('Navegador não suporta Geolocalização!');
+}
+});
+
+
+function initialize() {
+	var latlng = new google.maps.LatLng(-18.8800397, -47.05878999999999);
+
+	var options = {
+		zoom: 3,
+		center: latlng,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+
+	map = new google.maps.Map(document.getElementById("mapa"), options);
+}
+
+
 function abrirInfoBox(id, marker) {
 	if (typeof(idInfoBoxAberto) == 'number' && typeof(infoBox[idInfoBoxAberto]) == 'object') {
 		infoBox[idInfoBoxAberto].close();
@@ -54,6 +59,7 @@ function abrirInfoBox(id, marker) {
 	infoBox[id].open(map, marker);
 	idInfoBoxAberto = id;
 }
+
 
 function carregarPontos() {
 

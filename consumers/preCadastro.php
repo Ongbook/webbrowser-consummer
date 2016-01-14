@@ -2,8 +2,8 @@
 
 class PreCadastro
 {
-	public $nome;
-	public $email;
+	private $nome;
+	private $email;
 
 	public function sendPost($data)
 	{
