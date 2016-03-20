@@ -4,4 +4,4 @@ Consumidor HTML da api do Ongbook com cURL.
 - Twitter Bootstrap
 - Smarty Template PHP
 
-Editando para testar o hooks. Continuando
+Editando para testar o hooks. Continuando o teste.
