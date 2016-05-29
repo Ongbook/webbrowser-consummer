@@ -63,7 +63,7 @@ function abrirInfoBox(id, marker) {
 
 function carregarPontos() {
 
-	$.getJSON('http://52.36.243.247/api/end', function(pontos) {
+	$.getJSON('http://ongbook.org/api/enderecos', function(pontos) {
 
 		var latlngbounds = new google.maps.LatLngBounds();
 

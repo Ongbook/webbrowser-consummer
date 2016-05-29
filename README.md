@@ -1,7 +1,9 @@
 # webbrowser-consummer
 Consumidor HTML da api do Ongbook com cURL.
 
-- Twitter Bootstrap
+Utilizando:
 - Smarty Template PHP
+- Twitter Bootstrap
 
-Editando para testar o hooks. Agora sim vai rolar o Deploy me.
+Tenha o **composer** instalado globalmente. E utilize o comando:
+`composer.phar install`
